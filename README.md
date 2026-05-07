@@ -4,7 +4,7 @@
 
 Every tool here is built and published autonomously by [Ada](https://github.com/bernard7340) — a continuous AI orchestrator running 24/7 on Bernard's machine. Ada researches a vertical, identifies a manual workflow worth automating, writes the tool in Python, runs a quality gate, and pushes it to GitHub — without a human in the loop on the build itself.
 
-**Star this list to get notified as new tools land.** New tools published autonomously every few days.
+**Star this list to get notified as new tools land.** *(Latest update: 2026-05-07 — 8 tools across 7 verticals, more shipping daily.)*
 
 ---
 
@@ -12,11 +12,11 @@ Every tool here is built and published autonomously by [Ada](https://github.com/
 
 - [🏠 Property Management](#-property-management)
 - [🏛️ Municipal & Civic](#️-municipal--civic)
-- [🦷 Dental Labs](#-dental-labs) *(in build queue)*
-- [🔧 HVAC Contractors](#-hvac-contractors) *(in build queue)*
-- [💍 Wedding & Event Rentals](#-wedding--event-rentals) *(in build queue)*
-- [🛡️ Independent Insurance](#️-independent-insurance) *(in build queue)*
-- [⚱️ Funeral Homes](#️-funeral-homes) *(in build queue)*
+- [🦷 Dental Labs](#-dental-labs)
+- [🔧 HVAC Contractors](#-hvac-contractors)
+- [💍 Wedding & Event Rentals](#-wedding--event-rentals)
+- [🛡️ Independent Insurance](#️-independent-insurance)
+- [⚱️ Funeral Homes](#️-funeral-homes)
 - [💡 Why this list exists](#-why-this-list-exists)
 - [🤝 Want a tool for your industry?](#-want-a-tool-for-your-industry)
 
@@ -38,23 +38,23 @@ For real-estate operators, muni-bond analysts, and civic-tech folks who want sig
 
 ## 🦷 Dental Labs
 
-- **rx-intake-triage** *(in build queue)* — Auto-classify incoming dentist Rx requests by urgency + lab process; draft acknowledgment back to dentist.
+- **[rx-intake-triage](https://github.com/bernard7340/rx-intake-triage)** — Auto-classifies incoming dentist Rx requests by urgency and lab process type, then drafts a professional acknowledgment back to the referring dentist. Pure Python + Claude Sonnet.
 
 ## 🔧 HVAC Contractors
 
-- **service-call-quote-drafter** *(in build queue)* — Tech finishes a service call; tool reads notes + photos; drafts customer-ready quote within minutes.
+- **[service-call-quote-drafter](https://github.com/bernard7340/service-call-quote-drafter)** — AI-powered customer quotes from tech field notes + photos — ready in under 60 seconds. The tech finishes a service call, snaps photos, jots a few notes; the tool produces a customer-ready quote. Claude Sonnet + Gemini Pro for photo analysis.
 
 ## 💍 Wedding & Event Rentals
 
-- **inquiry-quote-generator** *(in build queue)* — Bride emails "how much for X chairs Y tables Z linens"; tool drafts itemized quote with availability check.
+- **[inquiry-quote-generator](https://github.com/bernard7340/inquiry-quote-generator)** — Turns a customer's inquiry email ("how much for 150 chairs, 20 tables, and ivory linens?") into an itemized quote with availability check and pricing. Pure Python + Claude Sonnet.
 
 ## 🛡️ Independent Insurance
 
-- **policy-renewal-prep** *(in build queue)* — 30 days before renewal, tool reads the existing policy + 3 best alternatives; drafts client email.
+- **[policy-renewal-prep](https://github.com/bernard7340/policy-renewal-prep)** — 30 days before renewal, the tool reads the existing policy + 3 best alternatives in the local market, then drafts a personalized client email recommending the right move. Claude Sonnet, ~$0.01 per policy.
 
 ## ⚱️ Funeral Homes
 
-- **obituary-drafter** *(in build queue)* — Family submits a brief about the deceased; tool drafts a tasteful obituary in the home's house style.
+- **[obituary-drafter](https://github.com/bernard7340/obituary-drafter)** — Family submits a brief about the deceased; the tool drafts a tasteful, publication-ready obituary in the home's house style. Two-pass (draft + refine) with Claude Sonnet.
 
 ---
 
@@ -113,6 +113,16 @@ Want to follow along live? [Bernard's profile](https://github.com/bernard7340) s
 
 ---
 
+## 📈 Tool count
+
+```
+Verticals covered : 7
+Tools shipped     : 8 (5 of them auto-published by Ada in the last 24h)
+Verticals queued  : 4+ (construction, pharmacy, law, more)
+```
+
+---
+
 **License:** [CC0](LICENSE) — copy this list, fork it, mirror it, sell it. The tools themselves are MIT.
 
-— Built by [Bernard](https://github.com/bernard7340) · Maintained by Ada · Last updated: 2026-05-06
+— Built by [Bernard](https://github.com/bernard7340) · Maintained by Ada · Last updated: 2026-05-07
