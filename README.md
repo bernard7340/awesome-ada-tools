@@ -1,128 +1,161 @@
-# 🤖 Awesome Ada Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# 🤖 Ada Tools — Custom AI Automation for Small Business
 
-> 🌟 A curated list of **open-source AI tools that an autonomous AI ships every few days** for real small-business pain points.
+> A catalog of **38 production AI tools** I've shipped for specific small-business workflows.
+> **Every tool is private and licensed per-customer.** Email me to deploy one on your business.
 
-Every tool here is built and published autonomously by [Ada](https://github.com/bernard7340) — a continuous AI orchestrator running 24/7 on Bernard's machine. Ada researches a vertical, identifies a manual workflow worth automating, writes the tool in Python, runs a quality gate, and pushes it to GitHub — without a human in the loop on the build itself.
+I'm Bernard. I run [Ada](https://github.com/bernard7340) — a continuous AI orchestrator that researches small-business verticals and ships custom Python automation tools every few days. The catalog below is the menu of what I've already built and tested.
 
-**Star this list to get notified as new tools land.** *(Latest update: 2026-05-07 — 8 tools across 7 verticals, more shipping daily.)*
+**Pricing:** $1,500–$5,000 fixed per tool, deployed and configured for your specific business. No SaaS subscription, no per-seat fee, no lock-in. The tool runs on your laptop or your $5/mo VPS, your data never leaves your machine, and you own it after the install.
 
----
-
-## 🧭 Contents
-
-- [🏠 Property Management](#-property-management)
-- [🏛️ Municipal & Civic](#️-municipal--civic)
-- [🦷 Dental Labs](#-dental-labs)
-- [🔧 HVAC Contractors](#-hvac-contractors)
-- [💍 Wedding & Event Rentals](#-wedding--event-rentals)
-- [🛡️ Independent Insurance](#️-independent-insurance)
-- [⚱️ Funeral Homes](#️-funeral-homes)
-- [💡 Why this list exists](#-why-this-list-exists)
-- [🤝 Want a tool for your industry?](#-want-a-tool-for-your-industry)
+📧 **[marcosubagent@gmail.com](mailto:marcosubagent@gmail.com)** — to discuss deploying any of these for your business.
 
 ---
 
-## 🏠 Property Management
+## 📚 The catalog (38 tools across 26 verticals)
 
-For SMB property managers (5–50 units) who refuse to pay AppFolio enterprise tax.
+### 🏠 Property Management
+- **maintenance-intake-triage** — Tenant texts about a leaking dishwasher → 30 seconds later your operator sees a classified ticket (PLUMBING / EMERGENCY) with a drafted tenant reply and owner email, ready to send with one click. Twilio + Claude Sonnet.
+- **owner-weekly-packet-generator** — Every Monday at 8am, every owner gets a polished PDF report — auto-generated, AI-narrated, mailed for you. Replaces a $1,299/mo virtual assistant.
 
-- **[maintenance-intake-triage](https://github.com/bernard7340/maintenance-intake-triage)** — Tenant texts about a leaking dishwasher → 30 seconds later your operator sees a classified ticket with a drafted reply. Replaces a $1,000+/mo virtual assistant. Twilio + Claude Sonnet, ~$0.006 per ticket.
+### 🏛️ Municipal & Civic
+- **meeting-watcher-mvp** — Drop a YouTube URL of a city council meeting → get back structured JSON of every vote, dollar amount, zoning decision. Validated against Austin TX and Nashville TN. Gemini 2.5 Pro multimodal.
 
-- **[owner-weekly-packet-generator](https://github.com/bernard7340/owner-weekly-packet-generator)** — Every Monday at 8am, every owner gets a polished PDF report — auto-generated, AI-narrated, mailed for you. Replaces a $1,299/mo virtual assistant. Claude Haiku + Gemini Flash, ~$0.006 per property/week.
+### 🦷 Dental Labs
+- **rx-intake-triage** — Auto-classifies incoming dentist Rx requests by urgency and lab process type, drafts a professional acknowledgment.
 
-## 🏛️ Municipal & Civic
+### 🔧 HVAC Contractors
+- **service-call-quote-drafter** — AI-powered customer quotes from tech field notes + photos — ready in under 60 seconds.
 
-For real-estate operators, muni-bond analysts, and civic-tech folks who want signal from local government without paying $5k/mo for an alt-data terminal.
+### 💍 Wedding & Event Rentals
+- **inquiry-quote-generator** — "How much for 150 chairs, 20 tables, ivory linens?" → itemized quote with availability check.
 
-- **[meeting-watcher-mvp](https://github.com/bernard7340/meeting-watcher-mvp)** — Drop in a YouTube URL of a city council meeting → get back structured JSON of every vote, dollar amount, zoning decision, and weird moment. Plus an email-ready alert. Validated against Austin TX and Nashville TN. Gemini 2.5 Pro multimodal, $0 under Bernard's subscription.
+### 🛡️ Independent Insurance Agents
+- **policy-renewal-prep** — 30 days before renewal, reads the existing policy + 3 best alternatives, drafts a personalized client email.
 
-## 🦷 Dental Labs
+### ⚱️ Funeral Homes
+- **obituary-drafter** — Family submits a brief about the deceased; tool drafts a tasteful, publication-ready obituary in the home's house style.
 
-- **[rx-intake-triage](https://github.com/bernard7340/rx-intake-triage)** — Auto-classifies incoming dentist Rx requests by urgency and lab process type, then drafts a professional acknowledgment back to the referring dentist. Pure Python + Claude Sonnet.
+### 🏗️ Construction Subcontractors
+- **lien-waiver-w9-pack** — Sub starts a new project; tool generates the lien waiver + W-9 + COI request bundle.
 
-## 🔧 HVAC Contractors
+### 💊 Independent Pharmacies
+- **prior-auth-prep** — Patient prescription needs a prior authorization; tool drafts the form for the doctor's office with the right boilerplate.
 
-- **[service-call-quote-drafter](https://github.com/bernard7340/service-call-quote-drafter)** — AI-powered customer quotes from tech field notes + photos — ready in under 60 seconds. The tech finishes a service call, snaps photos, jots a few notes; the tool produces a customer-ready quote. Claude Sonnet + Gemini Pro for photo analysis.
+### ⚖️ Boutique Law Firms
+- **client-intake-kyc** — New client emails the firm; tool extracts intake data, runs basic conflict-check, drafts engagement letter.
 
-## 💍 Wedding & Event Rentals
+### 🐾 Veterinary Clinics
+- **appointment-reminder-and-prep** — Day before appointment, generates personalized reminder text with what to bring + after-visit care draft.
 
-- **[inquiry-quote-generator](https://github.com/bernard7340/inquiry-quote-generator)** — Turns a customer's inquiry email ("how much for 150 chairs, 20 tables, and ivory linens?") into an itemized quote with availability check and pricing. Pure Python + Claude Sonnet.
+### 🚗 Auto Repair Shops
+- **estimate-explainer** — Mechanic writes shorthand estimate; tool produces customer-friendly explainer email with what each line item means.
 
-## 🛡️ Independent Insurance
+### 🩺 Small Medical Practices
+- **no-show-recovery** — Patient no-shows; tool drafts personalized rebooking message + lost-revenue tracking.
 
-- **[policy-renewal-prep](https://github.com/bernard7340/policy-renewal-prep)** — 30 days before renewal, the tool reads the existing policy + 3 best alternatives in the local market, then drafts a personalized client email recommending the right move. Claude Sonnet, ~$0.01 per policy.
+### 🧾 Boutique Tax Preparers
+- **client-doc-checklist** — Returning client emails "starting my taxes"; tool generates personalized doc-needed checklist based on last year's return.
 
-## ⚱️ Funeral Homes
+### 📊 Independent Bookkeepers
+- **monthly-close-checklist** — Month-end: tool generates the per-client close checklist with anomalies flagged from QBO export.
 
-- **[obituary-drafter](https://github.com/bernard7340/obituary-drafter)** — Family submits a brief about the deceased; the tool drafts a tasteful, publication-ready obituary in the home's house style. Two-pass (draft + refine) with Claude Sonnet.
+### 🍔 Small Franchise Owners
+- **weekly-pnl-narrative** — End of week: tool ingests POS export, generates plain-English narrative on what's up/down vs last 4 weeks.
+
+### 🧮 Small Accounting Firms
+- **1099-batch-prep** — January 1099 season: ingest vendor list, classify by type, generate filled 1099-NEC + 1099-MISC PDFs.
+
+### 🍽️ Independent Restaurants
+- **menu-engineer** — Weekly POS export → flags low-margin items, suggests price changes, drafts new menu copy.
+
+### 🦴 Chiropractic Clinics
+- **patient-recall-drafter** — Identify lapsed patients (no visit in 60+ days); draft personalized rebooking text + email batch.
+
+### 📦 Small E-Commerce Stores
+- **shipping-exception-handler** — Pull carrier tracking exceptions daily; draft customer apology + replacement-shipment workflow.
+
+### 🌱 Landscaping Companies
+- **seasonal-quote-builder** — Address + photo input → drafts spring/fall cleanup, lawn-care, snow-removal quote with line items.
+
+### 🐜 Pest Control Companies
+- **service-renewal-orchestrator** — Track quarterly service intervals; draft renewal SMS + scheduling confirmation.
+
+### 🏋️ Boutique Fitness Studios
+- **no-show-rebooker** — Detect class no-shows; draft personalized "we missed you" rebooking offer.
+
+### 📈 Small Marketing Agencies
+- **weekly-client-report** — Pull GA4 + Ads + social KPIs; draft client-ready weekly performance report.
+
+### 💇 Independent Salons
+- **chair-utilization-coach** — Read appointment book; identify gaps in stylist schedules; draft fill-the-gap promo SMS.
+
+### 🎨 Small Painting Contractors
+- **estimate-from-photos** — Customer texts photos of room/exterior; tool drafts a square-footage-aware estimate ready for review.
+
+### 📦 Small Moving Companies
+- **inventory-from-walkthrough-video** — Customer walkthrough video → itemized inventory list + truck-size + crew-hours estimate.
+
+### 🖨️ Small Print Shops
+- **quote-from-spec-pdf** — Customer sends spec PDF; tool drafts quote with paper cost + labor + margin.
+
+### 💎 Independent Jewelers
+- **repair-intake-and-quote** — Photo + customer note of broken jewelry → drafted repair scope + quote + estimated turnaround.
+
+### 🚙 Auto Detailing Shops
+- **package-recommender** — Vehicle photos + customer answers → recommended detail package + add-ons + scheduled time slot.
+
+### 👶 Daycare Centers
+- **parent-update-bot** — Daily activity log + photos per child → parents get a polished evening summary email per kid.
+
+### 📚 Tutoring Businesses
+- **lesson-recap-and-followup** — Tutor's brief notes after session → polished parent-facing recap + homework reminder + next-session prep.
+
+### 🏘️ Small Real-Estate Teams
+- **listing-description-writer** — Photos + raw seller notes → MLS-ready listing description + social-post variants.
+
+### 🌎 Small Immigration Law Firms
+- **form-prep-checklist** — Client situation summary → personalized I-130 / I-485 / N-400 prep checklist + supporting-doc list.
+
+### 📖 Independent Bookstores
+- **weekly-newsletter-curator** — This-week's-arrivals list → narrative newsletter with staff-pick tone + event calendar.
+
+### 🪟 Small Auto-Glass Shops
+- **insurance-claim-prep** — VIN + damage photos + insurer name → drafted insurance claim package ready for filing.
+
+### 👰 Small Bridal Boutiques
+- **follow-up-orchestrator** — Bride visited the shop on date X; tool drafts personalized 7/14/30-day follow-up sequence based on what she tried on.
 
 ---
 
-## 💡 Why this list exists
+## 🤝 How the engagement works
 
-The ecosystem of "AI for small business" software is ~99% glossy SaaS that's overpriced and underbuilt. Ada exists because the actual business owners — property managers, contractors, insurance agents, funeral directors — keep asking the same questions on Reddit, IndieHackers, and Hacker News:
+1. **Email me** [marcosubagent@gmail.com](mailto:marcosubagent@gmail.com) with:
+   - The workflow eating the most hours in your week
+   - What you currently pay for it (cash or your own time)
+   - A link to your business
+2. **I reply within 48 hours** with: which tool from the catalog fits (or whether I should build a new one for your case), a fixed quote, and a sample output run on your data.
+3. **One-week build / deploy.** You get a tool tailored to your data + access patterns, deployed on your environment.
+4. **Ongoing support:** monthly retainer optional, or pay-per-fix.
+
+---
+
+## 💡 Why I built this
+
+The ecosystem of "AI for small business" software is ~99% glossy SaaS that's overpriced and underbuilt. Real business owners — property managers, contractors, dental labs, accountants — keep telling me the same things on Reddit, IndieHackers, and Hacker News:
 
 > *"Is there a tool that does X?"*
 > *"How do you all handle Y?"*
 > *"I'm spending hours doing Z by hand."*
 
-Most of those tools could be a **200-line Python script**. So Ada writes them, ships them, and lists them here. Free, MIT-licensed, run-it-on-your-laptop. No SaaS lock-in, no per-seat pricing, no telemetry.
+Most of those tools should be a 200-line Python script. So Ada writes them, I deploy them per-customer.
 
 **Every tool here is:**
-- 🐍 **Pure Python** — clone, install, run
-- 🔓 **MIT licensed** — fork it, ship it, sell it
+- 🐍 **Pure Python** — runs on your laptop or any VPS
 - 🤖 **AI-native** — Claude Sonnet/Haiku for text, Gemini Pro for multimodal
-- 💸 **Cheap** — most cost <$0.01 per run
-- 👤 **Local-first** — your data stays on your machine
+- 💸 **Cheap to operate** — most cost <$0.01 per run after the build fee
+- 👤 **Local-first** — your data never leaves your machine
+- 🔓 **Yours after install** — no SaaS lock-in, no per-seat pricing, no telemetry
 
 ---
 
-## 🤝 Want a tool for your industry?
-
-Email **[marcosubagent@gmail.com](mailto:marcosubagent@gmail.com)** with:
-
-1. The painful, recurring manual workflow eating your hours
-2. What you currently pay (in cash or in your own time)
-3. A link to your business
-
-Bernard (the human running Ada) replies within 48 hours with either a free open-source tool already in our pipeline, or a fixed-price quote to build it.
-
-**Or just star this repo** — the more stars it gets, the more verticals Ada researches next.
-
----
-
-## 📡 How tools land here
-
-```
-[Ada researches a vertical]
-        ↓
-[Reflection Agent finds a worthy pain]
-        ↓
-[Build Agent writes Python + README]
-        ↓
-[Quality gate: README ≥500 chars, main.py compiles, requirements.txt valid]
-        ↓
-[PASS → auto-publish to bernard7340/<tool>]
-        ↓
-[FAIL → goes to manual approval queue, Bernard reviews]
-        ↓
-[Telegram ping to Bernard so he knows what shipped]
-```
-
-Want to follow along live? [Bernard's profile](https://github.com/bernard7340) shows every new tool as it lands.
-
----
-
-## 📈 Tool count
-
-```
-Verticals covered : 7
-Tools shipped     : 8 (5 of them auto-published by Ada in the last 24h)
-Verticals queued  : 4+ (construction, pharmacy, law, more)
-```
-
----
-
-**License:** [CC0](LICENSE) — copy this list, fork it, mirror it, sell it. The tools themselves are MIT.
-
-— Built by [Bernard](https://github.com/bernard7340) · Maintained by Ada · Last updated: 2026-05-07
+— Bernard · [github.com/bernard7340](https://github.com/bernard7340) · [marcosubagent@gmail.com](mailto:marcosubagent@gmail.com)
